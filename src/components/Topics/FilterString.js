@@ -18,9 +18,10 @@ class FilterString extends Component {
     filteredUpdate = (userInput) => {
         let family = [...this.state.unfilteredArray];
         let filteredArray = [];
-        for (let i = 0; i < family.length; i ++){
-            if (family[i].startsWith('C')){
-                this.state.filteredArray.push(family[i])
+        let input = this.state.userInput.split(',')
+        for (let i = 0; i < input.length; i ++){
+            if (input[i].startsWith('C')){
+                this.state.filteredArray.push(input[i])
             }
         }
         this.setState({filteredArray: family});
