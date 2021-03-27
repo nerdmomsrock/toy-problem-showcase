@@ -12,11 +12,11 @@ class Sum extends Component {
     }
 
     num1 = (val) => {
-        this.setState ({number1: parseInt(val, 10)});
+        this.setState ({number1: parseInt(val)});
     }
 
     num2 = (val) => {
-        this.setState ({number2: parseInt(val, 10)});
+        this.setState ({number2: parseInt(val)});
     }
 
     added = (num1, num2) => {
